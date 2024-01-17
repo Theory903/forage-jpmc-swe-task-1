@@ -9,7 +9,7 @@ class ClientTest(unittest.TestCase):
             quote['top_bid']['price'],
             quote['top_ask']['price'],
             (quote['top_bid']['price'] + quote['top_ask']['price']) / 2
-        )
+    )
         result = getDataPoint(quote)
         self.assertEqual(result, expected_result)
 
